@@ -1,0 +1,37 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function to cast a vote
+def cast_vote():
+    selected_candidate = var.get()
+    if selected_candidate:
+        messagebox.showinfo("Vote Casted", f"You have voted for {selected_candidate}.")
+    else:
+        messagebox.showwarning("No Selection", "Please select a candidate to cast your vote.")
+
+# Create main application window
+root = tk.Tk()
+root.title("Voting System")
+root.geometry("300x250")
+
+# Label for heading
+heading = tk.Label(root, text="Please choose your candidate", font=("Arial", 14))
+heading.pack(pady=10)
+
+# Variable to store selected candidate
+var = tk.StringVar(value=None)
+
+# List of candidates
+candidates = ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4"]
+
+# Radio buttons for candidates
+for candidate in candidates:
+    radio_button = tk.Radiobutton(root, text=candidate, variable=var, value=candidate, font=("Arial", 12))
+    radio_button.pack(anchor="w", padx=20)
+
+# Button to cast vote
+vote_button = tk.Button(root, text="Cast Vote", command=cast_vote, font=("Arial", 12), bg="green", fg="white")
+vote_button.pack(pady=20)
+
+# Run the application
+root.mainloop()
