@@ -60,8 +60,8 @@ def login():
         smtp.ehlo()
         smtp.starttls()
         smtp.ehlo()
-        emailaddress='noel.python@gmail.com'
-        smtp.login(emailaddress,'24143307')
+        emailaddress='youremail.com'
+        smtp.login(emailaddress,'password')
         subject='HERE IS UR OTP FOR SCHOOL ELECTION.....do not forward this to anyone '
         global otp
         otp=random.randint(100000,999999)
