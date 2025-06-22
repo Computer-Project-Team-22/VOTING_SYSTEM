@@ -6,12 +6,12 @@ This project is a GUI-based voting system built using Python and Tkinter, enhanc
 
 ## 🚀 Features
 
-- 🔐 OTP-based login using Gmail
-- 🧠 Text-to-speech prompts via `pyttsx3`
-- 🎛️ Simple and intuitive Tkinter GUI
-- 📩 Sends OTP via SMTP using Gmail
-- ✅ Voting interface with multiple candidates
-- 🚫 Invalid OTP handling with alerts
+-  OTP-based login using Gmail
+-  Text-to-speech prompts via `pyttsx3`
+-  Simple and intuitive Tkinter GUI
+-  Sends OTP via SMTP using Gmail
+-  Voting interface with multiple candidates
+-  Invalid OTP handling with alerts
 
 ---
 
